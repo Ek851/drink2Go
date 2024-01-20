@@ -1,0 +1,72 @@
+.user-list {
+  display: flex;
+  margin-left: auto;
+  width: 180px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+    justify-content: space-between;
+  }
+}
+
+.user-list__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 60px;
+  height: 60px;
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+    color: $base-primary;
+  }
+
+
+  &--login {
+    background-image: url("../../images/icons/stack.svg#icon-user");
+  }
+
+  &--cart {
+    background-image: url("../../images/icons/stack.svg#icon-cart");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 22px;
+    background-position-x: 20px;
+  }
+}
+
+.user-list__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}

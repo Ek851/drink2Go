@@ -1,0 +1,76 @@
+.catalog-card {
+  background-color: $base-white;
+  padding: 40px 20px 20px;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 15px 0 $black-opacity;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px;
+  }
+}
+
+.catalog-card__link {
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog-card__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+}
+
+.catalog-card__image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 30px;
+  object-fit: contain;
+}
+
+.catalog-card__description {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.catalog-card__price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.catalog-card__button {
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 46px;
+  background-image: url("../../images/icons/stack.svg#button-cart");
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: 20px center;
+}
+
+.catalog-card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,35 @@
+.copyright {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.copyright__text {
+  color: $base-grey;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 5px;
+}
+
+.copyright__link {
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+  font-family: inherit;
+  color: $base-grey;
+  font-size: 12px;
+  line-height: 16px;
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.copyright__logo {
+  margin-left: 4px;
+}

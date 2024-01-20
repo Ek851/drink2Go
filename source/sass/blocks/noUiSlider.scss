@@ -1,0 +1,41 @@
+.noUi-target {
+  background: $light-grey;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-base {
+  height: 4px;
+  top: -1px;
+}
+
+.noUi-connect {
+  background: $primary-lighter;
+}
+
+.noUi-horizontal {
+  height: 2px;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.noUi-horizontal .noUi-handle {
+  border: 2px solid $primary-lighter;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: none;
+  top: -10px;
+  right: -22px;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  content: none;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: -6px;
+}

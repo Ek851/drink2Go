@@ -1,0 +1,27 @@
+.main-header {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.main-header__wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width - 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
